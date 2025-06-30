@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        Account myAcc = new Account("Mohan", 500);
+        myAcc.deposit(200);
+        myAcc.withdraw(100);
+        myAcc.withdraw(800); // will show insufficient balance
+        myAcc.printTransactionHistory();
+        System.out.println("Final Balance: " + myAcc.getBalance());
+    }
+}
